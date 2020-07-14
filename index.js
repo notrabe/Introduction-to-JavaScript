@@ -1,31 +1,50 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-
-
+var votingAge = 29;
+if (votingAge > 18){
+    console.log(true)
+}
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
+var num1 = 5
+var num2 = Math.floor(Math.random()*10) + 1
 
+if (num2 > 2){
+    let num1 = 6;
+    console.log(num1, num2);
+}
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
-
+var integer = parseInt(1999)
+console.log(integer)
 
 
 
 
 //Task d: Write a function to multiply a*b 
 
-
+var x = Math.floor(Math.random()*10)
+var y = Math.floor(Math.random()*10)
+var z = x * y
+console.log(z)
 
 
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
+
+
+
+var myAge = 22
+var dogYears = 7 
+var newAge = myAge * dogYears
+console.log(newAge)
 
 
 
@@ -53,6 +72,7 @@
 
 
 
+
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
 // Your function should take a string (either rock paper or sissors)
@@ -61,12 +81,75 @@
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
   
+// var userChoice = prompt("Do you choose rock, paper or scissors?");
+
+// var computerChoice = Math.random();
+//   if (computerChoice < 0.34) {
+// 	computerChoice = "rock";
+//   } else if(computerChoice <= 0.67) {
+// 	computerChoice = "paper";
+//   } else {
+// 	computerChoice = "scissors";
+//   } 
+  
+
+// var compare = function(choice1,choice2) {
+    
+//     if (choice1 === choice2) {
+        
+//         return "Tie";
+//     }
+    
+//     else if (choice1 === "rock") {
+        
+//         if (choice2 === "scissors") {
+//             return "rock wins";
+//         }
+//         else {
+//             return "paper wins";
+//         }
+//     }
+    
+//     else if (choice1 === "paper") {
+        
+//         if (choice2 === "rock") {
+//             return "paper wins";
+//         }
+//         else {
+//             return "scissors wins";
+//         }
+            
+//     }
+    
+//     else if (choice1 === "scissors") {
+        
+//         if (choice2 === "rock") {
+//             return "rock wins" + "<br>";
+//         }
+//         else {
+//             return "scissors win";
+//         }
+//     }
+    
+    
+//     } 
+
+    
+//    document.write("Computer chose: " + computerChoice + "<br>");
+//    document.write(compare(userChoice,computerChoice));
+    
   
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
+
+
+var km = Math.floor(Math.random()*10 + 1)
+var mi = km * .621371
+
+console.log(km, mi)
 
 
 
